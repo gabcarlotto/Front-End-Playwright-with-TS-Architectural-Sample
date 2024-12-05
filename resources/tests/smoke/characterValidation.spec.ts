@@ -36,5 +36,5 @@ test.describe('Home Page Tests', () => {
         await mortySmithPage.validateCharacterData(CharacterData);
     });
 
-    // ... other tests ...
+    // the Add functionality is not working, therefore I cannot make a scenario for it
 });
