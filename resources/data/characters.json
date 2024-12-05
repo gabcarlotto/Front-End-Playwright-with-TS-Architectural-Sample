@@ -1,0 +1,15 @@
+{
+    "__purpose__": "Store character data for testing.",
+    "RickSanchez": {
+        "name": "Rick Sanchez",
+        "genre": "Male",
+        "specie": "Human",
+        "status": "Alive"
+    },
+    "MortySmith": {
+        "name": "Morty Smith",
+        "genre": "Male",
+        "specie": "Human",
+        "status": "Alive"
+    }
+}
