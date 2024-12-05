@@ -1,0 +1,30 @@
+# Front-End Test Project with Playwright and TypeScript
+
+This project demonstrates how to write automated front-end tests using Playwright and TypeScript. It uses a Page Object Model (POM) structure for better organization and maintainability.
+
+## Technologies Used
+
+* **Playwright:** Node.js library to automate Chromium, Firefox and WebKit with a single API.
+* **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
+
+## Setup
+
+1. **Clone the repository:** `git clone https://github.com/gabcarlotto/playwright-ts-sample-architecture`
+2. **Install dependencies:** `npm install`
+3. **Install browsers:** `npx playwright install`
+
+## Running Tests
+
+* **Run all tests:** `npx playwright test`
+* **Run a specific test file:** `npx playwright test tests/smoke/homePage.spec.ts`
+* **Run tests in headed mode:** `npx playwright test --headed`
+
+## Viewing Reports
+
+* **Generate HTML report:** `npx playwright test --reporter=html`
+* **Open the latest report:** `npx playwright show-report`
+
+## Debugging
+
+* **Run tests in debug mode:** `npx playwright test --debug`
+* **Use VS Code debugger:** Set breakpoints in your code and run the tests in debug mode.
