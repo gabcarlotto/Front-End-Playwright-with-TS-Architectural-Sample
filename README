@@ -16,7 +16,7 @@ This project demonstrates how to write automated front-end tests using Playwrigh
 ## Running Tests
 
 * **Run all tests:** `npx playwright test`
-* **Run a specific test file:** `npx playwright test tests/smoke/homePage.spec.ts`
+* **Run a specific test file:** `npx playwright test tests/smoke`
 * **Run tests in headed mode:** `npx playwright test --headed`
 
 ## Viewing Reports

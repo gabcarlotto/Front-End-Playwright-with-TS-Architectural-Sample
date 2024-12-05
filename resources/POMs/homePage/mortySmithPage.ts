@@ -4,34 +4,34 @@ import { GenericFunctions } from "../../components/genericFunctions";
 
 export class MortySmithPage extends GenericFunctions {
     readonly page: Page;
-    readonly name: Locator;
-    readonly genre: Locator;
-    readonly specie: Locator;
-    readonly status: Locator;
+    readonly textName: Locator;
+    readonly textGenre: Locator;
+    readonly textSpecie: Locator;
+    readonly textStatus: Locator;
     readonly homeButton: Locator;
 
     constructor(page: Page) {
         super(page);
         this.page = page;
-        this.name = page.locator(".character-name");
-        this.genre = page.locator(".character-genre");
-        this.specie = page.locator(".character-specie");
-        this.status = page.locator(".character-status");
+        this.textName = page.locator(".character-name");
+        this.textGenre = page.locator(".character-genre");
+        this.textSpecie = page.locator(".character-specie");
+        this.textStatus = page.locator(".character-status");
         this.homeButton = page.locator("text=Home");
     }
 
     async isDisplayed() {
-        await expect(this.name).toBeVisible();
-        await expect(this.genre).toBeVisible();
-        await expect(this.specie).toBeVisible();
-        await expect(this.status).toBeVisible();
+        await expect(this.textName).toBeVisible();
+        await expect(this.textGenre).toBeVisible();
+        await expect(this.textSpecie).toBeVisible();
+        await expect(this.textStatus).toBeVisible();
         await expect(this.homeButton).toBeVisible();
     }
 
     async validateCharacterData(characterData: any) {
-        await expect(this.name).toHaveText(characterData.name);
-        await expect(this.genre).toContainText(characterData.genre);
-        await expect(this.specie).toContainText(characterData.specie);
-        await expect(this.status).toContainText(characterData.status);
+        await expect(this.textName).toHaveText(characterData.name);
+        await expect(this.textGenre).toContainText(characterData.genre);
+        await expect(this.textSpecie).toContainText(characterData.specie);
+        await expect(this.textStatus).toContainText(characterData.status);
     }
 }
