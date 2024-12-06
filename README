@@ -2,6 +2,8 @@
 
 This project demonstrates how to write automated front-end tests using Playwright and TypeScript. It uses a Page Object Model (POM) structure for better organization and maintainability.
 
+**This page has a lot of instability, when running the testcases the speed of the network impacts directly on the isDisplayed method, because it was not set to wait and then check for availability, which can cause the testcases to fail.**
+
 ## Technologies Used
 
 * **Playwright:** Node.js library to automate Chromium, Firefox and WebKit with a single API.
