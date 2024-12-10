@@ -13,8 +13,8 @@ export class HomePage extends GenericFunctions {
     constructor(page: Page) {
         super(page);
         this.page = page;
-        this.linkRickSanchez = page.locator("//div[span[normalize-space()=\"Rick Sanchez\"]]");
-        this.linkMortySmith = page.locator("//div[span[normalize-space()=\"Morty Smith\"]]");
+        this.linkRickSanchez = page.locator("//span[normalize-space()='Rick Sanchez']/following-sibling::a[normalize-space()='Ver detalle']");
+        this.linkMortySmith = page.locator("//span[normalize-space()='Morty Smith']/following-sibling::a[normalize-space()='Ver detalle']");
         this.addButton = page.locator("//a[normalize-space()='Add']"); //there is a irregularity on the buttons, some being <a> and the others <buttons>
         this.topButton = page.locator("//button[normalize-space()='Top']");
         this.homeButton = page.locator("//a[normalize-space()='Home']");
